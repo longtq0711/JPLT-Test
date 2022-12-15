@@ -22,7 +22,6 @@ class MainController extends Controller
         $level = $request->level;
         $category = Category::where(['name' => $name, 'level' => $level])->first();
         $tests = Test::where('category_id', $category->id)
-                ->whereNull('finished_at')
                 ->orWhere('finished_at','>',now())
                 ->withCount('questions')->paginate(5);
         $scores = auth()->user()->scores;
@@ -40,7 +39,7 @@ class MainController extends Controller
     }
 
     public function test_detail($slug){
-        $test = Test::whereSlug($slug)->with('my_Score','topTen.user')->withCount('questions')->first() ?? abort(404, 'テストが見つかりません');
+        $test = Test::whereSlug($slug)->withCount('questions')->first() ?? abort(404, 'テストが見つかりません');
         return view('test.detail', compact('test'));
     }
     public function score(Request $request, $slug){
@@ -69,7 +68,6 @@ class MainController extends Controller
             'point' => $points,
             'correct' => $correct ,
             'wrong' => $wrong,
-            'finished_at' => now()->format('Y-m-d H:i:s')
         ]);
 
         return redirect()->route('test.result',$test->slug)->withSuccess("テスト完了。 あなたのスコア: ".$points);

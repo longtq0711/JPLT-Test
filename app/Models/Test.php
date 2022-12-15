@@ -46,7 +46,7 @@ class Test extends Model
     }
 
     public function my_score(){
-        return $this->hasMany('App\Models\Score')->where('user_id',auth()->user()->id)->orderByDesc('finished_at');
+        return $this->hasMany('App\Models\Score')->where('user_id',auth()->user()->id);
     }
 
 

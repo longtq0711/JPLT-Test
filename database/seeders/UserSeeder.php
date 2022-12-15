@@ -14,7 +14,7 @@ class UserSeeder extends Seeder
     public function run()
     {   
         \App\Models\User::insert([
-            'name' => 'Tran Quang Long',
+            'name' => 'Tran Quang Nam',
             'email' => 'nam.tq@gmail.com',
             'email_verified_at' => now(),
             'type' => 'admin',

@@ -24,7 +24,7 @@ Route::get('/', function () {
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('panel',[MainController::class, 'dashboard'])->name('dashboard');
-    Route::get('test/detay/{slug}',[MainController::class, 'test_detail'])->name('test.detail');
+    Route::get('test/detail/{slug}',[MainController::class, 'test_detail'])->name('test.detail');
     Route::get('tests',[MainController::class, 'test_list'])->name('test.list');
     Route::get('test/{slug}',[MainController::class, 'test'])->name('test.join');
     Route::post('test/{slug}/score',[MainController::class, 'score'])->name('test.score');

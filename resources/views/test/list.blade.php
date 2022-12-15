@@ -15,7 +15,6 @@
                                 <h5 class="mb-1">{{ $test->title }}</h5>    
                                 <div class="">
                                 </div>
-                                <small>{{$test->finished_at ? $test->finished_at->diffForHumans().' bitiyor' : null }}</small>
                             </div>
                             <p class="mb-1">{{ Str::limit($test->description, 100) }}</p>
                             <small>{{$test->questions_count.' 質問'}}</small>

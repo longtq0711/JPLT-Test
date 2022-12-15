@@ -22,9 +22,8 @@ class TestFactory extends Factory
      */
     public function definition()
     {   
-        $title = $this->faker->sentence(rand(3,7));
         return [
-            'title' => $title,
+            'title' => 'Test'.rand(1,10),
             'category_id' => rand(1,10),
             'description' => $this->faker->text(200),
         ];

@@ -37,9 +37,6 @@
                         <td class="test-result-step-result-cell">
                             {{ $score->point }}/100
                         </td>
-                        <td class="test-result-step-result-cell">
-                            {{ date('H:i d-m-Y', strtotime($score->finished_at)) }}
-                        </td>
                     </tr>
                 @endforeach
             @else
@@ -52,9 +49,6 @@
                     </td>
                     <td class="test-result-step-result-cell">
                         {{ $result->point }}/100
-                    </td>
-                    <td class="test-result-step-result-cell">
-                        {{ date('H:i d-m-Y', strtotime($result->finished_at)) }}
                     </td>
                 </tr>
             @endif

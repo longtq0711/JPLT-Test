@@ -15,27 +15,69 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert(
+        $categories = [
             [
-                'name' => Str::random(10),
+                'name' => '読解',
                 'level' => 'N1',
             ],
             [
-                'name' => Str::random(10),
+                'name' => '読解',
                 'level' => 'N2',
             ],
             [
-                'name' => Str::random(10),
+                'name' => '読解',
                 'level' => 'N3',
             ],
             [
-                'name' => Str::random(10),
+                'name' => '読解',
                 'level' => 'N4',
             ],
             [
-                'name' => Str::random(10),
+                'name' => '読解',
                 'level' => 'N5',
             ],
-        );
+            [
+                'name' => '聴解',
+                'level' => 'N1',
+            ],
+            [
+                'name' => '聴解',
+                'level' => 'N2',
+            ],
+            [
+                'name' => '聴解',
+                'level' => 'N3',
+            ],
+            [
+                'name' => '聴解',
+                'level' => 'N4',
+            ],
+            [
+                'name' => '聴解',
+                'level' => 'N5',
+            ],
+            [
+                'name' => 'ごい・文法',
+                'level' => 'N1',
+            ],
+            [
+                'name' => 'ごい・文法',
+                'level' => 'N2',
+            ],
+            [
+                'name' => 'ごい・文法',
+                'level' => 'N3',
+            ],
+            [
+                'name' => 'ごい・文法',
+                'level' => 'N4',
+            ],
+            [
+                'name' => 'ごい・文法',
+                'level' => 'N5',
+            ],
+        ];
+        
+        DB::table('categories')->insert($categories);
     }
 }
