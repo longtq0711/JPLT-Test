@@ -13,6 +13,6 @@ return [
     |
     */
 
-    'failed' => 'Girilmiş olan kullanıcı verileri sistemdekiler ile eşleşmemektedir.',
-    'throttle' => 'Çok fazla oturum açma girişiminde bulundunuz. Lütfen :seconds saniye sonra tekrar deneyiz.',
+    'failed' => '入力されたユーザー データがシステム内のものと一致しません。',
+    'throttle' => 'ログイン試行回数が多すぎます。 秒後にもう一度お試しください。',
 ];
