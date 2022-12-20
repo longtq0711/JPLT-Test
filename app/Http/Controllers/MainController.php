@@ -79,10 +79,8 @@ class MainController extends Controller
         return view('test.result', compact('test', 'category')); 
     }
     
-    function test_history(Request $request, $slug) { 
-        $type = 'history';
-        $test = Test::with('questions')->whereSlug($slug)->first();
-        $category = Category::find($test->category_id);
-        return view('test.result', compact('test', 'category', 'type')); 
+    function test_history(Request $request) { 
+        $scores = auth()->user()->scores;
+        return view('profile.history', compact('scores')); 
     }
 }

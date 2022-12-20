@@ -85,11 +85,6 @@
                     <div class="d-grid gap-2 mt-2">
                         <a href="{{ route('test.join', $test->slug) }}" class="btn btn-primary btn-sm">テストを受ける</a>
                     </div>
-                    @if ($test->my_score)
-                    <div class="d-grid gap-2 mt-2">
-                        <a href="{{ route('test.history', $test->slug) }}" class="btn btn-info btn-sm">テストの結果を見る</a>
-                    </div> 
-                    @endif
                 </div>
             </div>
             </p>

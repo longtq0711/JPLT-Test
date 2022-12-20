@@ -79,7 +79,7 @@ class TestController extends Controller
     public function edit($id)
     {   
         $test = Test::withCount('questions')->find($id) ?? abort(404, 'テストが見つかりません');
-        return view('admin.Test.edit', compact('test'));
+        return view('admin.test.edit', compact('test'));
     }
 
     /**

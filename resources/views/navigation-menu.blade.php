@@ -107,13 +107,13 @@
                             @endif
 
                             <!-- Account Management -->
-                            <!-- <div class="block px-4 py-2 text-xs text-gray-400">
-                                {{ __('Hesabınızı Yönetin') }}
+                            <div class="block px-4 py-2 text-xs text-gray-400">
+                                {{ __('アカウントの管理') }}
                             </div>
 
-                            <x-jet-dropdown-link href="{{ route('profile.show') }}">
-                                {{ __('Profil') }}
-                            </x-jet-dropdown-link> -->
+                            <x-jet-dropdown-link href="{{ route('history') }}">
+                                {{ __('自分の結果') }}
+                            </x-jet-dropdown-link>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <!-- <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">

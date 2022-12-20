@@ -29,7 +29,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('test/{slug}',[MainController::class, 'test'])->name('test.join');
     Route::post('test/{slug}/score',[MainController::class, 'score'])->name('test.score');
     Route::get('test/{slug}/result',[MainController::class, 'test_result'])->name('test.result');
-    Route::get('test/{slug}/history',[MainController::class, 'test_history'])->name('test.history');
+    Route::get('history',[MainController::class, 'test_history'])->name('history');
 });
 
 
