@@ -5,7 +5,7 @@
 
             <p class="card-text">
             <div class="row">
-                <!-- <div class="col-md-4">
+                <div class="col-md-4">
                     <ul class="list-group">
                         @if ($test->my_rank)
                         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     @endif
-                </div> -->
+                </div>
                 <div class="col-md-12">
                     {{ $test->description }}
                     <div class="d-grid gap-2 mt-2">

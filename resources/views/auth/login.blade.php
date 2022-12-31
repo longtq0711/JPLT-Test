@@ -38,9 +38,9 @@
             </div>
 
             <div class="flex items-center justify-center mt-4">
-                <x-jet-button class="ml-4">
+                <a class="ml-4" href={{ route('register')}}>
                     アカウントを作成する
-                </x-jet-button>
+                </a>
             </div>
         </form>
     </x-jet-authentication-card>

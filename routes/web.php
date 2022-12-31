@@ -30,6 +30,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::post('test/{slug}/score',[MainController::class, 'score'])->name('test.score');
     Route::get('test/{slug}/result',[MainController::class, 'test_result'])->name('test.result');
     Route::get('history',[MainController::class, 'test_history'])->name('history');
+    Route::get('history/{id}',[MainController::class, 'getHistoryTest'])->name('history.show');
 });
 
 
