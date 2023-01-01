@@ -22,10 +22,15 @@
             @foreach ($scores as $score)
                 <tr class="test-result-step-row test-result-step-row-altone">
                     <td class="test-result-step-command-cell">
-                    {{ $score->test->categories->level }}
+                        <a href={{ route('history.show', $score->id )}}>
+                            {{ $score->test->title }}
+                        </a>
+                    </td>
+                    <td class="test-result-step-command-cell">
+                        {{ $score->test->categories->level }}
                     </td>
                     <td class="test-result-step-description-cell">
-                    {{ $score->test->categories->name }}
+                        {{ $score->test->categories->name }}
                     </td>
                     <td class="test-result-step-result-cell">
                         {{ $score->point }}/100

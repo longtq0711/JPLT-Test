@@ -70,11 +70,13 @@
                 </div>
                 @if ($question->correct_answer == $question->my_answer->answer)
                 <div class="alert alert-success mt-2" role="alert">
-                    <i class="fa fa-check"></i>&nbsp; あなたは質問に正しく答えました。<hr><i class="fas fa-info-circle"></i>&nbsp; {{$question->true_percent}}% の回答者がこの質問に正しく答えました。
+                    <i class="fa fa-check"></i>&nbsp; あなたは質問に正しく答えました。<hr><i class="fas fa-info-circle"></i>&nbsp; 
+                    {{-- {{$question->true_percent}}% の回答者がこの質問に正しく答えました。 --}} {{ $question->detailed_answer}}
                   </div>
                 @else
                 <div class="alert alert-danger mt-2" role="alert">
-                    <i class="fa fa-check"></i>&nbsp; あなたは質問に間違って答えました。<hr><i class="fas fa-info-circle"></i>&nbsp; {{$question->true_percent}}% の回答者がこの質問に正しく答えました。
+                    <i class="fa fa-check"></i>&nbsp; あなたは質問に間違って答えました。<hr><i class="fas fa-info-circle"></i>&nbsp; 
+                    {{-- {{$question->true_percent}}% の回答者がこの質問に正しく答えました。 --}} {{ $question->detailed_answer}}
                   </div>
                 @endif
                 <hr>

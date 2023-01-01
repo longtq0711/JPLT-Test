@@ -22,8 +22,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "ぎょうき",
               "answer4"=> "こうき",
               "correct_answer"=> "answer1",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [              "test_id"=> 34,
               "question"=> "国際コンクールでの優勝は、若い音楽家の人生を（一瞬）にして変えた。",
@@ -33,8 +34,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "いちしゅん",
               "answer4"=> "いっしゅん",
               "correct_answer"=> "answer4",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [              "test_id"=> 34,
               "question"=> "「残りわずか」の声に（誘われて）、思わずテレビショッピングで買い物をしてしまった。",
@@ -44,8 +46,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "さそわれて",
               "answer4"=> "おそわれて",
               "correct_answer"=> "answer3",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [              "test_id"=> 34,
               "question"=> "以前は静かな町だったのに、最近は（物騒）な事件が多くなった。",
@@ -55,8 +58,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "ぶっぞう",
               "answer4"=> "ぶつぞう",
               "correct_answer"=> "answer1",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [              "test_id"=> 34,
               "question"=> "インフルエンザでの死亡率が低い理由の一つに、国民の（衛生）知識の高さがあげられる。",
@@ -66,8 +70,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "えいぜい",
               "answer4"=> "ええぜい",
               "correct_answer"=> "answer2",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [              "test_id"=> 34,
               "question"=> "節約生活に疲れた消防者に安いだけの商品は（あきられて）きた。",
@@ -77,8 +82,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "館きられて",
               "answer4"=> "飽きられて",
               "correct_answer"=> "answer4",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [              "test_id"=> 34,
               "question"=> "「源氏物語」は日本の代表的な（こてん）文学だ。",
@@ -88,8 +94,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "箇典",
               "answer4"=> "個展",
               "correct_answer"=> "answer1",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [              "test_id"=> 34,
               "question"=> "自分の欠点を（なげいて）ばかりいないで、長所を伸ばすべきだ。",
@@ -99,8 +106,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "喝いて",
               "answer4"=> "難いて",
               "correct_answer"=> "answer1",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [              "test_id"=> 34,
               "question"=> "ストレスの多い現代、うつ病をい痛む人が（げきぞう）している。",
@@ -110,8 +118,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "劇増",
               "answer4"=> "激象",
               "correct_answer"=> "answer1",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 34,
@@ -122,8 +131,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "探水",
               "answer4"=> "淡水",
               "correct_answer"=> "answer4",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -134,8 +144,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "質",
               "answer4"=> "化",
               "correct_answer"=> "answer2",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -146,8 +157,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "作",
               "answer4"=> "物",
               "correct_answer"=> "answer3",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -158,8 +170,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "域",
               "answer4"=> "所",
               "correct_answer"=> "answer2",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -170,8 +183,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "軍",
               "answer4"=> "戦",
               "correct_answer"=> "answer4",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -182,8 +196,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "複",
               "answer4"=> "悪",
               "correct_answer"=> "answer2",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -194,8 +209,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "たま",
               "answer4"=> "まれ",
               "correct_answer"=> "answer1",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -206,8 +222,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "それぞれ",
               "answer4"=> "しばしば",
               "correct_answer"=> "answer4",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -218,8 +235,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "コンタクト",
               "answer4"=> "コンデイション",
               "correct_answer"=> "answer4",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -230,8 +248,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "資本",
               "answer4"=> "現実",
               "correct_answer"=> "answer1",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 35,
@@ -242,8 +261,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "特殊",
               "answer4"=> "特例",
               "correct_answer"=> "answer2",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 36,
@@ -254,8 +274,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "調節",
               "answer4"=> "管理",
               "correct_answer"=> "answer1",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 36,
@@ -266,8 +287,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "書き取り",
               "answer4"=> "切り抜き",
               "correct_answer"=> "answer4",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 36,
@@ -278,8 +300,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "乗り換えになる",
               "answer4"=> "つながっている",
               "correct_answer"=> "answer4",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 36,
@@ -290,8 +313,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "当たらなかった",
               "answer4"=> "おかしかった",
               "correct_answer"=> "answer3",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 36,
@@ -302,8 +326,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "非常に",
               "answer4"=> "改めて",
               "correct_answer"=> "answer2",
-              "created_at"=> "2022-12-04T14:23:22.093Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 36,
@@ -314,8 +339,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "率直に",
               "answer4"=> "自由に",
               "correct_answer"=> "answer3",
-              "created_at"=> "2022-12-04T14:23:22.094Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
           
@@ -327,8 +353,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "終わらせた",
               "answer4"=> "補った",
               "correct_answer"=> "answer4",
-              "created_at"=> "2022-12-04T14:23:22.094Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 36,
@@ -339,8 +366,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "この危険な仕事に、これだけの給料では通用しない。",
               "answer4"=> "この本はあなたの勉強に通用するのでお読みなさい。",
               "correct_answer"=> "answer2",
-              "created_at"=> "2022-12-04T14:23:22.094Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 36,
@@ -351,8 +379,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "論文は、あらすじ書き上がっています。",
               "answer4"=> "会議で経営方針のあらすじが決まった。",
               "correct_answer"=> "answer1",
-              "created_at"=> "2022-12-04T14:23:22.094Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
               "test_id"=> 36,
@@ -363,8 +392,9 @@ class QuestionSeeder extends Seeder
               "answer3"=> "病気だと分かった時にはもうすでに手遅れで、迷惑な状態だった。",
               "answer4"=> "こんな少ない給料では家族の生活はいい迷惑だ。",
               "correct_answer"=> "answer2",
-              "created_at"=> "2022-12-04T14:23:22.094Z",
-              "updated_at"=> "2022-12-04T14:23:22.094Z"
+              "created_at"=> \Carbon\Carbon::now(),
+              "detail_answer" => "detail_answer",
+              "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 7,
@@ -375,8 +405,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "3",
                 "answer4"=> "4",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ], 
             [
             "test_id"=> 7,
@@ -387,8 +418,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer1",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ], 
             [
             "test_id"=> 7,
@@ -399,8 +431,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer3",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ], 
             [
             "test_id"=> 7,
@@ -411,8 +444,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer2",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ], 
             [
             "test_id"=> 7,
@@ -423,8 +457,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer2",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 7,
@@ -435,8 +470,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer2",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 7,
@@ -447,8 +483,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer4",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 7,
@@ -459,8 +496,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer1",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 7,
@@ -471,8 +509,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer2",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 7,
@@ -483,8 +522,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer4",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 9,
@@ -495,8 +535,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer4",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 9,
@@ -507,8 +548,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer3",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 9,
@@ -519,8 +561,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer2",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 9,
@@ -531,8 +574,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer3",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 9,
@@ -543,8 +587,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "3",
             "answer4"=> "4",
             "correct_answer"=> "answer3",
-            "created_at"=> "2022-12-04T14:23:22.093Z",
-            "updated_at"=> "2022-12-04T14:23:22.094Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 37,
@@ -555,8 +600,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "幸福",
                 "answer4"=> "多量",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 37,
@@ -567,8 +613,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "確認",
                 "answer4"=> "冗談",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 37,
@@ -579,8 +626,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "発覚",
                 "answer4"=> "自覚",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 37,
@@ -591,8 +639,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "創造",
                 "answer4"=> "製品",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 37,
@@ -603,8 +652,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "突然",
                 "answer4"=> "偶然",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 37,
@@ -615,8 +665,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "のを",
                 "answer4"=> "だ",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 37,
@@ -627,8 +678,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "たびに",
                 "answer4"=> "だけに",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 37,
@@ -639,8 +691,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ようやく",
                 "answer4"=> "いつの間にか",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 37,
@@ -651,8 +704,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ことにした",
                 "answer4"=> "ようになった",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 37,
@@ -663,8 +717,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "のときに",
                 "answer4"=> "そうに",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -675,8 +730,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "流れ",
                 "answer4"=> "恐れ",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -687,8 +743,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "留学",
                 "answer4"=> "奨学",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -699,8 +756,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "デザイン",
                 "answer4"=> "イメージ",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -711,8 +769,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "申込書",
                 "answer4"=> "参考書",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -723,8 +782,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "完全",
                 "answer4"=> "完璧",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -735,8 +795,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "の間に",
                 "answer4"=> "の間で",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -747,8 +808,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "いる",
                 "answer4"=> "おります",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -759,8 +821,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "だけを",
                 "answer4"=> "だけに",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -771,8 +834,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ようになるまで",
                 "answer4"=> "ようになってから",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 38,
@@ -783,8 +847,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "あるのかどうかによって",
                 "answer4"=> "あるのかどうかについて",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -795,8 +860,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "エネルギー",
                 "answer4"=> "グランド",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -807,8 +873,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "国に戻る",
                 "answer4"=> "学校に通う",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -819,8 +886,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "想う",
                 "answer4"=> "図る",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -831,8 +899,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "発展",
                 "answer4"=> "進化",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -843,8 +912,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "カスタム",
                 "answer4"=> "アナウンス",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -855,8 +925,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "調子",
                 "answer4"=> "気分",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.094Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -867,8 +938,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "もう一度やった",
                 "answer4"=> "やるのを途中でやめた",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.094Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -879,8 +951,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "早く忘れて",
                 "answer4"=> "忘れないで",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.094Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -891,8 +964,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ときどき",
                 "answer4"=> "前から",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.094Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 39,
@@ -903,8 +977,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "前の年",
                 "answer4"=> "次の年",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.094Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 40,
@@ -915,8 +990,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " ゆうめ",
                 "answer4"=> " ゆめ",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 40,
@@ -927,8 +1003,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " さしんや",
                 "answer4"=> " しゃしんや",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 40,
@@ -939,8 +1016,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " せいかい",
                 "answer4"=> " せかい",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 40,
@@ -951,8 +1029,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " しま",
                 "answer4"=> " うま",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 40,
@@ -963,8 +1042,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " どうぶつ",
                 "answer4"=> " こうぶつ",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 40,
@@ -975,8 +1055,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " おこなわれて",
                 "answer4"=> " あらわれて",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 40,
@@ -987,8 +1068,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " いっしゃ",
                 "answer4"=> " いっし",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 40,
@@ -999,8 +1081,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " いただき",
                 "answer4"=> " うごき",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 40,
@@ -1011,8 +1094,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " ちゅい",
                 "answer4"=> " しゅうい",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 40,
@@ -1023,8 +1107,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " いわれ",
                 "answer4"=> " やわれ",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1035,8 +1120,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " なってない",
                 "answer4"=> " いってない",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1047,8 +1133,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " 降るつづけて",
                 "answer4"=> " 降ったつづけて",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1059,8 +1146,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " にみたい",
                 "answer4"=> " なみたい",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1071,8 +1159,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " ところ",
                 "answer4"=> " ばかり",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1083,8 +1172,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " で",
                 "answer4"=> " を",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1095,8 +1185,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " のと",
                 "answer4"=> " のは",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1107,8 +1198,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " していた",
                 "answer4"=> " していなかった",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1119,8 +1211,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " 汚したがらなくなった",
                 "answer4"=> " 汚したがらなかった",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1131,8 +1224,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " 行くなら",
                 "answer4"=> " 行くのは",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 41,
@@ -1143,8 +1237,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " きてでした",
                 "answer4"=> " きていました",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1155,8 +1250,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " のに",
                 "answer4"=> "　から",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1167,8 +1263,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " 決めなくてほしい",
                 "answer4"=> " 決めないでほしい",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1179,8 +1276,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " かかっておいた",
                 "answer4"=> " かかってみた",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1191,8 +1289,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " できたらよかった",
                 "answer4"=> " できればよかった",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1203,8 +1302,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " まえで",
                 "answer4"=> " まえに",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1215,8 +1315,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " へ",
                 "answer4"=> " を",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1227,8 +1328,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " わかりやすい",
                 "answer4"=> "わかってやすい",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1239,8 +1341,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " に",
                 "answer4"=> " で",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1251,8 +1354,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " じゃないか/じゃないか",
                 "answer4"=> " の/の",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 42,
@@ -1263,8 +1367,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " までに",
                 "answer4"=> "にまで",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1275,8 +1380,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " 小さい",
                 "answer4"=> " 大さい",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1287,8 +1393,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " ウゾオ",
                 "answer4"=> " ウジオ",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1299,8 +1406,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " ポクット",
                 "answer4"=> " パケット",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1311,8 +1419,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " 来かけ",
                 "answer4"=> " 出かけ",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1323,8 +1432,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " 電東",
                 "answer4"=> " 雷東",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1335,8 +1445,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " 閉き",
                 "answer4"=> " 間き",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1347,8 +1458,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " 会計",
                 "answer4"=> " 会社",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1359,8 +1471,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " すぐ",
                 "answer4"=> " さき",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1371,8 +1484,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " たべて",
                 "answer4"=> " くべて",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 43,
@@ -1383,8 +1497,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " ごで",
                 "answer4"=> " こうで",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1395,8 +1510,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " も",
                 "answer4"=> " まだ",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1407,8 +1523,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " なりません",
                 "answer4"=> " ありません",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1419,8 +1536,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " くださいません",
                 "answer4"=> " くださいましょうか",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1431,8 +1549,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " と",
                 "answer4"=> " に",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1443,8 +1562,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " より",
                 "answer4"=> " くらい",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1455,8 +1575,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " のに",
                 "answer4"=> " のは",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1467,8 +1588,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " だろう",
                 "answer4"=> " ほう",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1479,8 +1601,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " あるき",
                 "answer4"=> " あるかな",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1491,8 +1614,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " なら",
                 "answer4"=> "たら",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 44,
@@ -1503,8 +1627,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " わすれなくて",
                 "answer4"=> "わすれないで",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1515,8 +1640,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " こちら",
                 "answer4"=> " どちら",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1527,8 +1653,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " いちまい",
                 "answer4"=> " いちだい",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1539,8 +1666,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " おしえて",
                 "answer4"=> " はしって",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1551,8 +1679,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " ビル",
                 "answer4"=> " こうえん",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1563,8 +1692,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " いつか",
                 "answer4"=> " なにか",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1575,8 +1705,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " いちまい",
                 "answer4"=> " いっしょに",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1587,8 +1718,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " しゅくだい",
                 "answer4"=> " とし",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1599,8 +1731,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " さむい",
                 "answer4"=> " みじかい",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1611,8 +1744,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " かよう",
                 "answer4"=> " すむ",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 45,
@@ -1623,8 +1757,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> " よみます",
                 "answer4"=> " とびます",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-04T14:23:22.093Z",
-                "updated_at"=> "2022-12-04T14:23:22.094Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 3,
@@ -1635,8 +1770,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "内なる声",
                 "answer4"=> "倫理",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
             ],
             [
                 "test_id"=> 3,
@@ -1647,8 +1783,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "人間という知性動物がもつ、集団に適応しようとする欲求である。",
                 "answer4"=> "集団を作ってしか生きていけない人間の心に潜む助け合うの欲求である。",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1659,8 +1796,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ひりょうを増やす",
                 "answer4"=> "ひりょうを減らす",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1671,8 +1809,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "お知らせの内容を書き足す",
                 "answer4"=> "役所にゴミ回収を依頼する",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1683,8 +1822,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "一箱に入れるクッキーの量",
                 "answer4"=> "販売価格",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1695,8 +1835,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "携帯電話を買い換える",
                 "answer4"=> "手数料を払う",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1707,8 +1848,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "食事の準備をする",
                 "answer4"=> "若手グループの話を聞く",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1719,8 +1861,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "主任研修",
                 "answer4"=> "商品の製造",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1731,8 +1874,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "体を休めるために十分に寝ること",
                 "answer4"=> "えいようがある食事をとること",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1743,8 +1887,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "温度設定をしなかったこと",
                 "answer4"=> "温度設定をしたこと",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1755,8 +1900,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "商品化に長時間かかると予想されるから",
                 "answer4"=> "買う人が限定されると考えられるため",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 16,
@@ -1767,8 +1913,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ブランド品で高級に見えるところ",
                 "answer4"=> "値段が手ごろなところ",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1779,8 +1926,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "テレビコマーシャルに人気俳優を起用する",
                 "answer4"=> "バッケージを目立つデザインにする",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.847Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1791,8 +1939,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "議論の流れをふまえた意見が言えること",
                 "answer4"=> "専門的知識に基づく意見が言えること",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1803,8 +1952,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "省エネへの意識を持ち続けたいから",
                 "answer4"=> "家族のきずなが深まるから",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1815,8 +1965,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> 4,
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1827,8 +1978,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> 4,
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1839,8 +1991,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> 4,
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1851,8 +2004,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> 4,
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1863,8 +2017,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> 4,
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1875,8 +2030,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> 4,
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 17,
@@ -1887,8 +2043,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> 4,
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -1899,8 +2056,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -1911,8 +2069,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -1923,8 +2082,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.846Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -1935,8 +2095,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -1947,8 +2108,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -1959,8 +2121,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -1971,8 +2134,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -1983,8 +2147,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -1995,8 +2160,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 18,
@@ -2007,8 +2173,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> 3,
                 "answer4"=> '',
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2019,8 +2186,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "はっさく",
                 "answer4"=> "ほっさく",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2031,8 +2199,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "恋愛",
                 "answer4"=> "変窓",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2043,8 +2212,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "おおふく",
                 "answer4"=> "おおはば",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2055,8 +2225,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "さいけつ",
                 "answer4"=> "せんけつ",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2067,8 +2238,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "妊娠",
                 "answer4"=> "妊振",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2079,8 +2251,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "たてりき",
                 "answer4"=> "たてれき",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2091,8 +2264,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "かいしゅう",
                 "answer4"=> "かいじゅう",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2103,8 +2277,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "せつりつ",
                 "answer4"=> "せってい",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2115,8 +2290,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "鬲資",
                 "answer4"=> "融資",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 31,
@@ -2127,8 +2303,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "よたい",
                 "answer4"=> "せたい",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2139,8 +2316,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "いえばこそ",
                 "answer4"=> "いったからには",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2151,8 +2329,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "のはいえ",
                 "answer4"=> "といっても",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2163,8 +2342,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ばはり",
                 "answer4"=> "みずく",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2175,8 +2355,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "として",
                 "answer4"=> "にして",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2187,8 +2368,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ぬいた",
                 "answer4"=> "ぬき",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2199,8 +2381,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ものを",
                 "answer4"=> "ものに",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2211,8 +2394,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ともなしに",
                 "answer4"=> "どころではなく",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2223,8 +2407,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "たりとも",
                 "answer4"=> "ばかりか",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2235,8 +2420,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "考えて",
                 "answer4"=> "考える",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 32,
@@ -2247,8 +2433,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "が最後",
                 "answer4"=> "末に",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 33,
@@ -2259,8 +2446,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "料",
                 "answer4"=> "額",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 33,
@@ -2271,8 +2459,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "未",
                 "answer4"=> "無",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 33,
@@ -2283,8 +2472,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "参照",
                 "answer4"=> "出典",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 33,
@@ -2295,8 +2485,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "抵抗",
                 "answer4"=> "挑戦",
                 "correct_answer"=> "answer2",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 33,
@@ -2307,8 +2498,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "使いはたす",
                 "answer4"=> "使いすてる",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 33,
@@ -2319,8 +2511,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ゆるい",
                 "answer4"=> "もろい",
                 "correct_answer"=> "answer4",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 33,
@@ -2331,8 +2524,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "ぞくぞくと",
                 "answer4"=> "くれぐれも",
                 "correct_answer"=> "answer1",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
               [
                 "test_id"=> 33,
@@ -2343,8 +2537,9 @@ class QuestionSeeder extends Seeder
                 "answer3"=> "のきなみ",
                 "answer4"=> "ひいては",
                 "correct_answer"=> "answer3",
-                "created_at"=> "2022-12-16T22:21:02.847Z",
-                "updated_at"=> "2022-12-16T22:21:02.848Z"
+                "created_at"=> \Carbon\Carbon::now(),
+                "detail_answer" => "detail_answer",
+                "updated_at"=> \Carbon\Carbon::now()
               ],
             [
             "test_id"=> 33,
@@ -2355,8 +2550,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "うけとり",
             "answer4"=> "うけもち",
             "correct_answer"=> "answer2",
-            "created_at"=> "2022-12-16T22:21:02.847Z",
-            "updated_at"=> "2022-12-16T22:21:02.848Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ],
             [
             "test_id"=> 33,
@@ -2367,8 +2563,9 @@ class QuestionSeeder extends Seeder
             "answer3"=> "催促",
             "answer4"=> "一致",
             "correct_answer"=> "answer2",
-            "created_at"=> "2022-12-16T22:21:02.847Z",
-            "updated_at"=> "2022-12-16T22:21:02.848Z"
+            "created_at"=> \Carbon\Carbon::now(),
+            "detail_answer" => "detail_answer",
+            "updated_at"=> \Carbon\Carbon::now()
             ]
         ]);
     }

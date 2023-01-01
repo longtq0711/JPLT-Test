@@ -30,8 +30,7 @@ class MainController extends Controller
 
     public function test($slug){
         $test = Test::whereSlug($slug)->with('questions.my_answer','my_score')->first() ?? abort(404, "T");
-
-        // if($test->my_Score){
+        // if($test->my_score){
         //     return view('test.score', compact('test'));
         // }
 
@@ -45,7 +44,7 @@ class MainController extends Controller
     public function score(Request $request, $slug){
         $test = Test::with('questions')->whereSlug($slug)->first() ?? abort(404,'テストが見つかりません');
         $correct = 0;
-        // if($test->my_Score){
+        // if($test->my_score){
         //     abort(404, '以前にこのテストを受けたことがあります');
         // }
 
@@ -70,7 +69,8 @@ class MainController extends Controller
             'wrong' => $wrong,
         ]);
 
-        return redirect()->route('test.result',$test->slug)->withSuccess("テスト完了。 あなたのスコア: ".$points);
+        // return redirect()->route('test.result',$test->slug)->withSuccess("テスト完了。 あなたのスコア: ".$points);
+        return view('test.result', compact('test', 'points'))->withSuccess("テスト完了。 あなたのスコア: ".$points);
     }
 
     function test_result(Request $request, $slug) { 
@@ -82,5 +82,13 @@ class MainController extends Controller
     function test_history(Request $request) { 
         $scores = auth()->user()->scores;
         return view('profile.history', compact('scores')); 
+    }
+
+    public function getHistoryTest($id) {
+        $score = Score::find($id);
+        $test_id = $score->test_id;
+        $points = $score->point;
+        $test = Test::find($test_id);
+        return view('test.result', compact('test', 'points'));
     }
 }
