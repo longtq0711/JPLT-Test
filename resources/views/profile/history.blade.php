@@ -16,6 +16,9 @@
                 <td class="test-result-table-header-cell">
                     けっか
                 </td>
+                <!-- <td class="test-result-table-header-cell">
+                    完了時間
+                </td> -->
             </tr>
         </thead>
         <tbody>

@@ -8,6 +8,7 @@ use App\Models\UserAnswer;
 use App\Models\Score;
 use App\Models\Category;
 use App\Http\Requests\GetTestListRequest;
+use App\Models\User;
 
 class MainController extends Controller
 {
@@ -48,14 +49,18 @@ class MainController extends Controller
         //     abort(404, '以前にこのテストを受けたことがあります');
         // }
 
-        foreach($test->questions as $question){
+        foreach($test->questions as $question){ 
+            $userAnswer = UserAnswer::find($question->id);
+
             UserAnswer::create([
                 'user_id' => auth()->user()->id,
                 'question_id' => $question->id,
-                'answer' => $request->post($question->id)
+                'answer' => $request->post($question->id),
+                'created_at' => now()
             ]);
             
-            if($question->correct_answer ===$request->post($question->id)){
+            
+            if($question->correct_answer === $request->post($question->id)){
                 $correct += 1;
             }
         }

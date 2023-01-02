@@ -57,7 +57,7 @@
     <x-slot name="header">{{ $test->title }} 結果ページ</x-slot>
     <div class="card">
         <div class="card-body">
-            <h3><i class="fas fa-award"></i>&nbsp;&nbsp;あなたのポイント: <strong>{{ $points }}</strong></h3>
+            <h3><strong>{{ $test->title }} ー {{ $test->categories->level }} ー {{ $test->categories->name }} ー {{ $points }}/100</strong></h3>
             <div class="alert alert-info" role="alert">
                 <h2 class="card-text"><i class="fas fa-info"></i> &nbsp;情報</h2>
                 <i class="fa fa-check text-success mt-2"></i> : 正解 <br>
@@ -126,12 +126,12 @@
                 @if ($question->correct_answer == $question->my_answer->answer)
                 <div class="alert alert-success mt-2" role="alert">
                     <i class="fa fa-check"></i>&nbsp; あなたは質問に正しく答えました。<hr><i class="fas fa-info-circle"></i>&nbsp; 
-                    {{-- {{$question->true_percent}}% の回答者がこの質問に正しく答えました。 --}} {{ $question->detailed_answer}}
+                    {{-- {{$question->true_percent}}% の回答者がこの質問に正しく答えました。 --}} {{ $question->detail_answer}}
                   </div>
                 @else
                 <div class="alert alert-danger mt-2" role="alert">
                     <i class="fa fa-check"></i>&nbsp; あなたは質問に間違って答えました。<hr><i class="fas fa-info-circle"></i>&nbsp; 
-                    {{-- {{$question->true_percent}}% の回答者がこの質問に正しく答えました。 --}} {{ $question->detailed_answer}}
+                    {{-- {{$question->true_percent}}% の回答者がこの質問に正しく答えました。 --}} {{ $question->detail_answer}}
                   </div>
                 @endif
                 <hr>

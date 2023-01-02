@@ -14,7 +14,7 @@ class AddColumnDetailedAnswerToQuestions extends Migration
     public function up()
     {
         Schema::table('questions', function (Blueprint $table) {
-            $table->string('detail_answer');
+            $table->string('detail_answer')->nullable();
         });
     }
 

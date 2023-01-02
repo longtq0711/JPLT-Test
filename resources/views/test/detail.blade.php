@@ -31,13 +31,13 @@
                                 </div>
                             </li>
                         @endif
-                        @if ($test->finished_at)
+                        <!-- @if ($test->finished_at)
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 参加期限
                                 <span title="{{ $test->finished_at }}"
                                     class="badge bg-secondary rounded-pill">{{ $test->finished_at->diffForHumans() }}</span>
                             </li>
-                        @endif
+                        @endif -->
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             問題数
                             <span class="badge bg-secondary rounded-pill">{{ $test->questions_count }}</span>

@@ -46,6 +46,10 @@
                         <option @if(old('correct_answer')=== 'answer4') selected @endif value="answer4">回答4. D</option>
                     </select>
                 </div>
+                <div class="form-group mt-3">
+                    <label for="">回答説明</label>
+                    <textarea name="detail_answer" class="form-control mt-1 mb-2" value="" id="" rows="4">{{ old('detail_answer') }}</textarea>
+                </div>
 
                 <div class="form-group d-grid gap-2 mt-5" style="position: relative;">
                     <button class="btn btn-success btn-sm " type="submit">保存</button>

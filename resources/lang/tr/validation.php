@@ -85,9 +85,9 @@ return [
     'mimes' => ':attribute dosya biçimi :values olmalıdır.',
     'mimetypes' => ':attribute dosya biçimi :values olmalıdır.',
     'min' => [
-        'numeric' => ':attribute değeri :min değerinden büyük olmalıdır.',
-        'file' => ':attribute değeri :min kilobayt değerinden büyük olmalıdır.',
-        'string' => ':attribute değeri :min karakterden büyük olmalıdır.',
+        'numeric' => ':attribute は :min より大きくなければなりません。',
+        'file' => ':attribute 値は :min キロバイトより大きくなければなりません。',
+        'string' => ':attribute 値は :min 文字より大きくなければなりません。',
         'array' => ':attribute en az :min nesneye sahip olmalıdır.',
     ],
     'not_in' => 'Seçili :attribute geçersiz.',
