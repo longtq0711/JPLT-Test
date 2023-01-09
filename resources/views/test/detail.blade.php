@@ -80,12 +80,14 @@
                     </div>
                     @endif
                 </div>
-                <div class="col-md-12">
-                    {{ $test->description }}
-                    <div class="d-grid gap-2 mt-2">
-                        <a href="{{ route('test.join', $test->slug) }}" class="btn btn-primary btn-sm">テストを受ける</a>
+                @if ($test->questions_count > 0)
+                    <div class="col-md-12">
+                        {{ $test->description }}
+                        <div class="d-grid gap-2 mt-2">
+                            <a href="{{ route('test.join', $test->slug) }}" class="btn btn-primary btn-sm">テストを受ける</a>
+                        </div>
                     </div>
-                </div>
+                @endif
             </div>
             </p>
 

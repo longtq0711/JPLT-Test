@@ -16,19 +16,14 @@
                 <td class="test-result-table-header-cell">
                     けっか
                 </td>
-                <!-- <td class="test-result-table-header-cell">
+                <td class="test-result-table-header-cell">
                     完了時間
-                </td> -->
+                </td>
             </tr>
         </thead>
         <tbody>
             @foreach ($scores as $score)
                 <tr class="test-result-step-row test-result-step-row-altone">
-                    <td class="test-result-step-command-cell">
-                        <a href={{ route('history.show', $score->id )}}>
-                            {{ $score->test->title }}
-                        </a>
-                    </td>
                     <td class="test-result-step-command-cell">
                         {{ $score->test->categories->level }}
                     </td>
@@ -37,6 +32,9 @@
                     </td>
                     <td class="test-result-step-result-cell">
                         {{ $score->point }}/100
+                    </td>
+                    <td class="test-result-step-command-cell">
+                        {{ $score->finished_at }}
                     </td>
                 </tr>
             @endforeach

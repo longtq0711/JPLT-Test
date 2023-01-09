@@ -21,10 +21,14 @@ class MainController extends Controller
     public function test_list(GetTestListRequest $request){
         $name = $request->name;
         $level = $request->level;
-        $category = Category::where(['name' => $name, 'level' => $level])->first();
-        $tests = Test::where('category_id', $category->id)
-                ->orWhere('finished_at','>',now())
+        $type = $request->type;
+        $category = Category::where(['name' => $name, 'level' => $level, 'type' => $type])->first();
+        $tests = [];
+        if ($category) {
+            $tests = Test::where('category_id', $category->id)
                 ->withCount('questions')->paginate(5);
+        }
+        
         $scores = auth()->user()->scores;
         return view('test.list', compact('tests','scores'));
     }
@@ -72,10 +76,11 @@ class MainController extends Controller
             'point' => $points,
             'correct' => $correct ,
             'wrong' => $wrong,
+            'finished_at' => $request->finished_at
         ]);
 
         // return redirect()->route('test.result',$test->slug)->withSuccess("テスト完了。 あなたのスコア: ".$points);
-        return view('test.result', compact('test', 'points'))->withSuccess("テスト完了。 あなたのスコア: ".$points);
+        return view('test.result', compact('test', 'points', 'score'))->withSuccess("テスト完了。 あなたのスコア: ".$points);
     }
 
     function test_result(Request $request, $slug) { 
@@ -94,6 +99,6 @@ class MainController extends Controller
         $test_id = $score->test_id;
         $points = $score->point;
         $test = Test::find($test_id);
-        return view('test.result', compact('test', 'points'));
+        return view('test.result', compact('test', 'points', 'score'));
     }
 }

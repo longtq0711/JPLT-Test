@@ -20,6 +20,7 @@ class Score extends Migration
             $table->integer('point');
             $table->integer('correct');
             $table->integer('wrong');
+            $table->string('finished_at');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

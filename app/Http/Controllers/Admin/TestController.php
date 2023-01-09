@@ -51,8 +51,7 @@ class TestController extends Controller
         $category = Category::where(['name' => $request->category, 'level' => $request->level])->first();
         $test = Test::create([
             'title' => $request->title,
-            'category_id' => $category->id,
-            'finished_at' => now()->format('Y-m-d H:i:s')
+            'category_id' => $category->id
         ]);
         return redirect()->route('tests.index')->withSuccess('テストが正常に作成されました');
     }
