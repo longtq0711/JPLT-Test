@@ -33,6 +33,7 @@
                         <th scope="col">問題数</th>
                         <th scope="col">レベル</th>
                         <th scope="col">カテゴリ名</th>
+                        <th scope="col">大門</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -43,6 +44,7 @@
                         <td>{{ $test->questions_count }}</td>
                         <td>{{ $test->categories->level }}</td>
                         <td>{{ $test->categories->name }}</td>
+                        <td>{{ $test->categories->type }}</td>
                         <td>
                             <!-- <a href="{{ route('tests.details', $test->id) }}" class="btn btn-sm btn-outline-info rounded-pill"><i class="fa fa-info-circle"></i></a> -->
                             <a href="{{ route('questions.index', $test->id) }}" class="btn btn-sm btn-outline-warning rounded-pill"><i class="fa fa-question"></i></a>

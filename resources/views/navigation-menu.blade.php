@@ -104,6 +104,10 @@
                                 <x-jet-dropdown-link href="{{ route('tests.index') }}">
                                     テスト
                                 </x-jet-dropdown-link>
+
+                                <x-jet-dropdown-link href="{{ route('types.index') }}">
+                                    大門
+                                </x-jet-dropdown-link>
                             @endif
 
                             <!-- Account Management -->

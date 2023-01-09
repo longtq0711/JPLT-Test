@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\QuestionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\TestController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\Admin\TypeController;
 
 
 /*
@@ -42,7 +43,10 @@ Route::group(
         Route::get('tests/{id}', [TestController::class,'destroy'])->whereNumber('id')->name('tests.destroy');
         Route::get('tests/{id}/details', [TestController::class,'show'])->whereNumber('id')->name('tests.details');
         Route::post('test/{test_id}/questions/{id}', [QuestionController::class,'destroy'])->whereNumber('test_id')->name('questions.destroy');
+        Route::get('types/{id}', [TypeController::class,'destroy'])->whereNumber('id')->name('types.destroy');
         Route::resource('tests', TestController::class)->except('destroy');
         Route::resource('test/{test_id}/questions', QuestionController::class)->except('destroy');
+        Route::resource('types', TypeController::class)->except('destroy');
+        Route::get('category_type', [TypeController::class,'get_type'])->name('get_type');
     }
 );
