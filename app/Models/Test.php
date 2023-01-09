@@ -11,9 +11,7 @@ class Test extends Model
 {
     use HasFactory;
     use Sluggable;
-    protected $fillable=['title','category_id', 'description','status','finished_at','slug'];
-
-    protected $dates = ['finished_at'];
+    protected $fillable=['title','category_id', 'description','status','slug'];
 
     protected $appends = ['details','my_rank'];
 

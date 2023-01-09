@@ -14,7 +14,7 @@ class TestSeeder extends Seeder
     public function run()
     {
         $tests = [];
-        foreach (range(1, 15) as $item) {
+        foreach (range(1, 35) as $item) {
             $level = $item % 5 == 0 ? '5' : $item % 5;
             array_push($tests,
                 [

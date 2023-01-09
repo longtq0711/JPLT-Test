@@ -1,63 +1,9 @@
 <x-app-layout>
     <x-slot name="header">結果ページ</x-slot>
-    {{-- <h1 class="test-results-header">
-        テスト結果
-    </h1>
-
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <td class="test-result-table-header-cell">
-                    レベル
-                </td>
-                <td class="test-result-table-header-cell">
-                    カテゴリ名
-                </td>
-                <td class="test-result-table-header-cell">
-                    けっか
-                </td>
-                <!-- <td class="test-result-table-header-cell">
-                    完了時間
-                </td> -->
-            </tr>
-        </thead>
-        <tbody>
-            @php
-                $result = $test->my_score[0];
-            @endphp
-            @if (isset($type) && $type == 'history')
-                @foreach ($test->my_score as $score)
-                    <tr class="test-result-step-row test-result-step-row-altone">
-                        <td class="test-result-step-command-cell">
-                            {{ $category->level }}
-                        </td>
-                        <td class="test-result-step-description-cell">
-                            {{ $category->name }}
-                        </td>
-                        <td class="test-result-step-result-cell">
-                            {{ $score->point }}/100
-                        </td>
-                    </tr>
-                @endforeach
-            @else
-                <tr class="test-result-step-row test-result-step-row-altone">
-                    <td class="test-result-step-command-cell">
-                        {{ $category->level }}
-                    </td>
-                    <td class="test-result-step-description-cell">
-                        {{ $category->name }}
-                    </td>
-                    <td class="test-result-step-result-cell">
-                        {{ $result->point }}/100
-                    </td>
-                </tr>
-            @endif
-        </tbody>
-    </table> --}}
     <x-slot name="header">{{ $test->title }} 結果ページ</x-slot>
     <div class="card">
         <div class="card-body">
-            <h3><strong>{{ $test->title }} ー {{ $test->categories->level }} ー {{ $test->categories->name }} ー {{ $points }}/100</strong></h3>
+            <h3><strong>{{ $test->title }} ー {{ $test->categories->level }} ー {{ $test->categories->name }} ー {{ $points }}/100 ー {{ $score->finished_at }}</strong></h3>
             <div class="alert alert-info" role="alert">
                 <h2 class="card-text"><i class="fas fa-info"></i> &nbsp;情報</h2>
                 <i class="fa fa-check text-success mt-2"></i> : 正解 <br>

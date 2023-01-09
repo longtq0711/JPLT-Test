@@ -5,10 +5,10 @@
     </div>
     <div class="row">
         <div class="col-md-12">
+            @if (empty($tests)) 
+                テストがない
+            @else
             <div class="list-group">
-                @if (empty($tests)) 
-                    テストがない
-                @else
                     @foreach ($tests as $test)
                         <a href="{{ route('test.detail',$test->slug) }}" class="list-group-item list-group-item-action mt-2" style="border-radius:20px" aria-current="true">  
                             <div class="d-flex w-100 justify-content-between">
@@ -20,11 +20,11 @@
                             <small>{{$test->questions_count.' 質問'}}</small>
                         </a>
                     @endforeach
-                @endif
                 <div class="mt-2">
                     {{ $tests->links()}}
                 </div>
             </div>
+            @endif
         </div>
         <!-- <div class="col-md-4">
             <div class="card">

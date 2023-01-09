@@ -17315,3 +17315,9 @@ readers do not read off random characters that represent icons */
 		padding-right: 2rem;
 	}
 }
+
+#timer {
+  text-align: right;
+  padding: 10px 20px 0 0;
+  color: red;
+}
