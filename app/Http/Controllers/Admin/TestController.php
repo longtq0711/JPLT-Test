@@ -25,7 +25,7 @@ class TestController extends Controller
         if(request()->get('status')){
             $tests = $tests->where('status',request()->get('status'));
         };
-        $tests = $tests->paginate(5);
+        $tests = $tests->orderBy('id', 'DESC')->paginate(5);
         
         return view('admin.test.list', compact('tests'));
     }

@@ -11,7 +11,7 @@
                 </div>
                 <div class="form-group">
                     <label for="level">レベル</label>
-                    <select name="level" id="category" class="form-control mt-1 mb-2">
+                    <select name="level" id="level" class="form-control mt-1 mb-2">
                         <option value="">レベルを選択してください</option>
                         <option value="N1">N1</option>
                         <option value="N2">N2</option>
@@ -23,7 +23,7 @@
                 
                 <div class="form-group">
                     <label for="category_name">カテゴリ名</label>
-                    <select name="category" id="category" class="form-control mt-1 mb-2">
+                    <select name="category" id="name" class="form-control mt-1 mb-2">
                         <option value="">カテゴリを選択してください</option>
                         <option value="ごい・文法">ごい・文法</option>
                         <option value="読解">読解</option>
@@ -33,13 +33,8 @@
 
                 <div class="form-group">
                     <label for="level">大門</label>
-                    <select name="level" id="type" class="form-control mt-1 mb-2">
-                        <option value="">レベルを選択してください</option>
-                        <option value="N1">N1</option>
-                        <option value="N2">N2</option>
-                        <option value="N3">N3</option>
-                        <option value="N4">N4</option>
-                        <option value="N5">N5</option>
+                    <select name="type" id="type" class="form-control mt-1 mb-2">
+                        <option value="">大門を選択してください</option>
                     </select>
                 </div>
 
@@ -58,8 +53,24 @@
                     $('#finishedInput').hide();
                 }
             });
-            $('#type').change(function(){
-                
+            $('#type').click(function(){
+                $.ajax({
+                    type: 'GET',
+                    url: "/admin/category_type",
+                    dataType: "JSON",
+                    data: { 
+                        name: $('#name').val(),
+                        level: $('#level').val(),
+                    },
+                    success: function (data) {
+                        $.each(data['categories'], function (i, item) {
+                            $('#type').append($('<option>', { 
+                                value: item.type,
+                                text : item.type 
+                            }));
+                        });
+                    }
+                });
             });
         </script>
     </x-slot>
