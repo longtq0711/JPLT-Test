@@ -106,7 +106,7 @@
                                 </x-jet-dropdown-link>
 
                                 <x-jet-dropdown-link href="{{ route('types.index') }}">
-                                    大門
+                                    大問
                                 </x-jet-dropdown-link>
                             @endif
 

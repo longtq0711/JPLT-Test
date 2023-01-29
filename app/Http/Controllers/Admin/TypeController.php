@@ -44,7 +44,7 @@ class TypeController extends Controller
             'level' => $request->level,
             'type' => $request->type
         ]);
-        return redirect()->route('types.index')->withSuccess('大門が正常に作成されました');
+        return redirect()->route('types.index')->withSuccess('大問が正常に作成されました');
     }
 
     /**
@@ -55,7 +55,7 @@ class TypeController extends Controller
      */
     public function show($id)
     {   
-        $category = Category::find($id) ?? abort(404,'大門が見つかりません');
+        $category = Category::find($id) ?? abort(404,'大問が見つかりません');
         
         return view('admin.type.show', compact('category'));
     }
@@ -68,7 +68,7 @@ class TypeController extends Controller
      */
     public function edit($id)
     {   
-        $category = Category::find($id) ?? abort(404, '大門が見つかりません');
+        $category = Category::find($id) ?? abort(404, '大問が見つかりません');
         return view('admin.type.edit', compact('category'));
     }
 
@@ -81,10 +81,10 @@ class TypeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $category = Category::find($id) ?? abort(404, '大門が見つかりません');
+        $category = Category::find($id) ?? abort(404, '大問が見つかりません');
         $category->update($request->except(['_method','_token']));
 
-        return redirect()->route('types.edit', $category->id)->withSuccess('大門が正常に編集されました');
+        return redirect()->route('types.edit', $category->id)->withSuccess('大問が正常に編集されました');
     }
 
     /**
@@ -95,9 +95,9 @@ class TypeController extends Controller
      */
     public function destroy($id)
     {
-        $category = Category::find($id) ?? abort(404, '大門が見つかりません');
+        $category = Category::find($id) ?? abort(404, '大問が見つかりません');
         $category->delete();
-        return redirect()->route('types.index')->withSuccess('大門削除が正常に完了しました!');
+        return redirect()->route('types.index')->withSuccess('大問削除が正常に完了しました!');
     }
 
     public function get_type(Request $request)

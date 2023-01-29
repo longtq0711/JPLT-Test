@@ -33,7 +33,7 @@
                         <th scope="col">問題数</th>
                         <th scope="col">レベル</th>
                         <th scope="col">カテゴリ名</th>
-                        <th scope="col">大門</th>
+                        <th scope="col">大問</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>

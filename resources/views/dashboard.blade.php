@@ -26,7 +26,7 @@
                 <div class="card">
                     <ul class="list-group list-group-flush">
                         <select name="name" id="category">
-                            <option value="ごい・文法">ごい・文法</option>
+                            <option value="ごい">ごい</option>
                             <option value="読解">読解</option>
                             <option value="聴解">聴解</option>
                         </select>

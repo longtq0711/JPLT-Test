@@ -25,16 +25,16 @@
                     <label for="category_name">カテゴリ名</label>
                     <select name="category" id="name" class="form-control mt-1 mb-2">
                         <option value="">カテゴリを選択してください</option>
-                        <option value="ごい・文法">ごい・文法</option>
+                        <option value="ごい">ごい</option>
                         <option value="読解">読解</option>
                         <option value="聴解">聴解</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="level">大門</label>
+                    <label for="level">大問</label>
                     <select name="type" id="type" class="form-control mt-1 mb-2">
-                        <option value="">大門を選択してください</option>
+                        <option value="">大問を選択してください</option>
                     </select>
                 </div>
 

@@ -1,5 +1,5 @@
 <x-app-layout>
-    <x-slot name="header">大門編集</x-slot>
+    <x-slot name="header">大問編集</x-slot>
     
     <div class="card">
         <div class="card-body">
@@ -7,7 +7,7 @@
                 @method('PUT')
                 @csrf
                 <div class="form-group">
-                    <label for="type">大門</label>
+                    <label for="type">大問</label>
                     <input id="type" type="text" name="type" class="form-control mt-1 mb-2" value="{{ $category->type }}">
                 </div>
                 <div class="form-group">
@@ -26,7 +26,7 @@
                     <label for="category_name">カテゴリ名</label>
                     <select name="category" id="category" class="form-control mt-1 mb-2">
                         <option value="">カテゴリを選択してください</option>
-                        <option value="ごい・文法" {{ ($category->name == 'ごい・文法') ? 'selected' : '' }} >ごい・文法</option>
+                        <option value="ごい" {{ ($category->name == 'ごい') ? 'selected' : '' }} >ごい</option>
                         <option value="読解" {{ ($category->name == '読解') ? 'selected' : '' }}>読解</option>
                         <option value="聴解" {{ ($category->name == '聴解') ? 'selected' : '' }}>聴解</option>
                     </select>
