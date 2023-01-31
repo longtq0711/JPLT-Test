@@ -1,0 +1,86 @@
+#campaign_form  {
+    font-family: Roboto, sans-serif;
+}
+#campaign_form .list-block .add_attribute{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+    
+#campaign_form .list-block .block{
+    background-color: #F9F9F9;
+    margin-bottom: 30px;     
+}
+#campaign_form .list-block .block .box{
+    background-color: #F9F9F9;
+    margin-top: 20px;
+    padding: 12px;
+}
+#campaign_form .list-block .block .box input{
+    margin-bottom: 15px;
+}
+#campaign_form .list-block .modal .block-list{
+    text-align: center; 
+}     
+#campaign_form .list-block .modal .block-list .item{
+    margin-bottom: 20px;
+}
+#campaign_form .list-block .modal .block-list .item img{
+    width: 100%;
+    object-fit: contain;
+}
+
+#campaign_form .list-block .block .hearder{
+    display: inline-block;
+}
+
+#campaign_form .list-block .block-active, .accordion:hover {
+    background-color: #ccc;
+}
+#campaign_form .list-block .block .buttons {
+    top: 12px;
+    position: absolute;
+    right: 0;
+}
+#campaign_form .list-block .block .btn-tool{
+    background-color: transparent;
+    color: #adb5bd;
+    font-size: 15px;
+    padding: 5px 5px;
+}
+
+#campaign_form .list-block .block .box-unactive {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#campaign_form .list-block .block .img-thumbnail {
+    max-width: 100px;
+    max-height: 100px
+}
+
+#campaign_form .list-block .block .campaign {
+    background-color: #FFF3F7;
+} 
+
+#campaign_form .list-block .block .campaign .banner {
+    margin-bottom: 40px;
+}
+#campaign_form .list-block .block .campaign .banner img {
+    width: 100%;
+    height: auto;
+}
+#campaign_form .list-block .block .campaign .group-more {
+    padding: 10px;
+    background: #FEFFFF;
+    box-shadow: 4px 0px 8px rgb(0 0 0 / 5%);
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+
+#campaign_form .block-6 .img-item .img-thumbnail {
+    background: #FF8A00
+}

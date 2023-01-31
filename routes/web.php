@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\TestController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\Admin\TypeController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\UserController;
 
 
 /*
@@ -37,7 +39,23 @@ Route::group(['middleware' => 'auth'], function(){
 
 Route::group(
     [
-        'middleware' =>  ['auth', 'isAdmin'], 'prefix' => 'admin'
+        'prefix' => 'admin', 'as' => 'admin.'
+    ],
+    function () {
+        Route::get('login', [AdminController::class, 'login']);
+        Route::post('login', [AdminController::class, 'signIn'])->name('login');
+    
+        Route::group(['middleware' => 'admin'], function () {
+            Route::resource('users', UserController::class)->except('destroy');
+            Route::get('logout', [AdminController::class, 'logout'])->name('logout');
+            Route::get('/', [AdminController::class, 'index'])->name('index');
+        });
+    }
+);
+
+Route::group(
+    [
+        'middleware' =>  ['auth', 'isAdmin'], 'prefix' => 'teacher'
     ],
     function () {
         Route::get('tests/{id}', [TestController::class,'destroy'])->whereNumber('id')->name('tests.destroy');

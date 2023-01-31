@@ -1,4 +1,4 @@
-@extends('Admin::layouts.admin')
+@extends('admin.layouts.admin')
 
 @section('title', __('Danh sách người dùng'))
 
@@ -28,7 +28,7 @@
                 </div>
             </form>
             
-            @include('Admin::includes.flash')
+            @include('admin.includes.flash')
  
             <div class="table-responsive">
                 <table class="table table-hover table-sm mb-0">
@@ -93,7 +93,7 @@
                     </tbody>
                 </table>
 
-                @include('Admin::includes.pagination', ['datas' => $paginates])
+                @include('admin.includes.pagination', ['datas' => $paginates])
             </div>
         </div>
     </div>

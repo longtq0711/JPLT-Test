@@ -96,7 +96,7 @@
                         </x-slot>
 
                         <x-slot name="content">
-                            @if(auth()->user()->type == 'admin')
+                            @if(auth()->user()->type == 'teacher')
                                 <div class="block px-4 py-2 text-xs text-gray-400">
                                     管理者の操作
                                 </div>
