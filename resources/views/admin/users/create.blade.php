@@ -10,8 +10,7 @@
         <div class="card-box">
             @include('admin.includes.flash')
 
-            <form method="POST" action="{{ route('admin.users.update', $dataEdit->id) }}">
-                @method('PUT')
+            <form method="POST" action="{{ route('admin.users.store') }}">
                 @csrf
                     <div class="row">
                         <div class="col-md-12">
@@ -21,7 +20,7 @@
                                     name="name"
                                     type="text"
                                     placeholder="{{ __('名前') }}"
-                                    value="{{ $dataEdit['name'] }}"
+                                    value="{{ old('name') }}"
                                     maxlength=255
                                     class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}"
                                 >
@@ -40,7 +39,7 @@
                                     type="email"
                                     name="email"
                                     placeholder="{{ __('Email') }}"
-                                    value="{{ $dataEdit['email'] }}"
+                                    value="{{ old('email') }}"
                                     maxlength=255
                                     class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}"
                                 >
@@ -57,16 +56,17 @@
                                 <select
                                     name="type"
                                     placeholder="{{ __('役割') }}"
+                                    value="{{ old('type') }}"
                                     class="form-control"
                                 >
-                                    <option value="teacher" {{ ($dataEdit['type'] == 'teacher') ? 'selected' : '' }}>教師</option>
-                                    <option value="user" {{ ($dataEdit['type'] == 'user') ? 'selected' : '' }}>ユーザ</option>
+                                    <option value="teacher">教師</option>
+                                    <option value="user">ユーザ</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary btn-sm">編集</button>
+                                <button type="submit" class="btn btn-primary btn-sm">作成</button>
                             </div>
                         </div>
                     </div>                    

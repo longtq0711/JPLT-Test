@@ -48,6 +48,17 @@ class UserController extends Controller
         return view('admin.users.show', compact('user'));
     }
 
+        /**
+     * Show the form for editing the specified resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create(Request $request)
+    {
+        return view('admin.users.create');
+    }
+
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -74,37 +85,31 @@ class UserController extends Controller
 
             DB::commit();
 
-            return redirect()->route('admin.users.edit', $user->id)->with('success', __('Cập nhật thành công'));
+            return redirect()->route('admin.users.edit', $user->id)->with('success', __('ユーザが正常に編集されました。'));
         } catch (Exception $e) {
             DB::rollback();
 
-            return redirect()->route('admin.users.edit', $user->id)->with('success', __('Lỗi không thể cập nhạt'));
+            return redirect()->route('admin.users.edit', $user->id)->with('error', __('ユーザが編集できませんでした。'));
         }
     }
 
     public function store(Request $request){
-        $length = 6;
-        $char = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-        $dataForm = $request->all();
-        $dataForm['social'] = 'admin';
-        $dataForm['password']= substr( str_shuffle( $char ), 0, $length );
-        $user = User::create($dataForm);
-        $data=$dataForm;
-        return response()->json([
-            'status' => 200,
-            'message' => __('Đăng ký tài khoản Thành công'),
-            'data' => $data,
-        ]);
+        // try {
+            $data = $request->all();
+            $data['password'] = bcrypt('password');
+            $user = User::create($data);
+            return redirect()->route('admin.users.edit', $user->id)->with('success', __('ユーザが正常に作成されました。'));
+        // } catch(\Exception $e) {
+        //     return redirect()->route('admin.users.create')->with('error', __('ユーザが作成できませんでした。'));
+        // }
     }
 
     public function editUser(Request $request){
         $user = User::find($request->id);
         $dataForm = $request->all();
-        $user->fullname = $dataForm['fullname'];
-        $user->phone_number = $dataForm['phone_number'];
+        $user->name = $dataForm['name'];
         $user->email = $dataForm['email'];
-        $user->contact = $dataForm['contact'];
-        $user->detail_contact = $dataForm['detail_contact'];
+        $user->type = $dataForm['type'];
         $user->save();
         $data = $dataForm;
         return response()->json([
@@ -112,5 +117,19 @@ class UserController extends Controller
             'message' => __('Sửa tài khoản Thành công'),
             'data' => $data,
         ]);
+    }
+
+    
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        $user = User::find($id) ?? abort(404, 'ユーザが見つかりません');
+        $user->delete();
+        return redirect()->route('admin.users.index')->withSuccess('ユーザ削除が正常に完了しました!');
     }
 }

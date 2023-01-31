@@ -46,6 +46,7 @@ Route::group(
         Route::post('login', [AdminController::class, 'signIn'])->name('login');
     
         Route::group(['middleware' => 'admin'], function () {
+            Route::get('users/{id}', [UserController::class,'destroy'])->whereNumber('id')->name('users.destroy');
             Route::resource('users', UserController::class)->except('destroy');
             Route::get('logout', [AdminController::class, 'logout'])->name('logout');
             Route::get('/', [AdminController::class, 'index'])->name('index');

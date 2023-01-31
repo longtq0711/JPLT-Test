@@ -52,7 +52,7 @@
                                 </td>
                                 <td class="text-right">
                                     <a href="{{ route('admin.users.edit', $item->id) }}" class="btn btn-sm btn-action btn-outline-primary"><i class="fas fa-pencil-alt"></i></a>
-                                    {{-- <a href="{{ route('admin.users.show', $item->id) }}" class="btn btn-sm btn-action btn-outline-primary"><i class="far fa-eye"></i></a> --}}
+                                    <a href="{{ route('admin.users.destroy', $item->id) }}" onclick="return confirm('ユーザを削除してもよろしいですか？')" class="btn btn-sm btn-outline-danger rounded-pill"><i class="fa fa-times"></i></a>
                                 </td>
                             </tr>
                         @endforeach
