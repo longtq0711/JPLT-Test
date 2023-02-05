@@ -88,10 +88,14 @@ class TestController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(TestUpdateRequest $request, $id)
+    public function update(Request $request, $id)
     {
-        $Test = Test::find($id) ?? abort(404, 'テストが見つかりません');
-        Test::find($id)->update($request->except(['_method','_token']));
+        $test = Test::find($id) ?? abort(404, 'テストが見つかりません');
+        $category = Category::where(['name' => $request->name, 'level' => $request->level, 'type' => $request->type])->first();
+        $test->update([
+            'title' => $request->title,
+            'category_id' => $category->id
+        ]);
 
         return redirect()->route('tests.index')->withSuccess('テストが正常に編集されました');
     }

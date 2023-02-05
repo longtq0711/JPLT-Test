@@ -63,7 +63,7 @@
                         level: $('#level').val(),
                     },
                     success: function (data) {
-                        if ($('#type').val().length == 0) {
+                        if ($('#type option').length < 7) {
                             $.each(data['categories'], function (i, item) {
                                 $('#type').append($('<option>', { 
                                     value: item.type,
