@@ -91,7 +91,6 @@ class TestController extends Controller
     public function update(TestUpdateRequest $request, $id)
     {
         $Test = Test::find($id) ?? abort(404, 'テストが見つかりません');
-        dd($request->all());
         Test::find($id)->update($request->except(['_method','_token']));
 
         return redirect()->route('tests.index')->withSuccess('テストが正常に編集されました');
