@@ -56,7 +56,7 @@
             $('#type').click(function(){
                 $.ajax({
                     type: 'GET',
-                    url: "/admin/category_type",
+                    url: "/teacher/category_type",
                     dataType: "JSON",
                     data: { 
                         name: $('#name').val(),

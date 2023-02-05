@@ -106,6 +106,6 @@ class TestController extends Controller
     {
         $Test = Test::find($id) ?? abort(404, 'テストが見つかりません');
         $Test->delete();
-        return redirect()->route('test.index')->withSuccess('テスト削除が正常に完了しました!');
+        return redirect()->route('tests.index')->withSuccess('テスト削除が正常に完了しました!');
     }
 }
