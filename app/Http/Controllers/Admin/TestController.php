@@ -48,7 +48,7 @@ class TestController extends Controller
      */
     public function store(TestCreateRequest $request)
     {
-        $category = Category::where(['name' => $request->category, 'level' => $request->level])->first();
+        $category = Category::where(['name' => $request->category, 'level' => $request->level, 'type' => $request->type])->first();
         $test = Test::create([
             'title' => $request->title,
             'category_id' => $category->id
@@ -90,10 +90,11 @@ class TestController extends Controller
      */
     public function update(TestUpdateRequest $request, $id)
     {
-        $Test = Test::find($id) ?? abort(404, 'Test Bulunamadı');
+        $Test = Test::find($id) ?? abort(404, 'テストが見つかりません');
+        dd($request->all());
         Test::find($id)->update($request->except(['_method','_token']));
 
-        return redirect()->route('Testzes.index')->withSuccess('Test güncelleme işlemi başarıyla gerçekleşti.');
+        return redirect()->route('tests.index')->withSuccess('テストが正常に編集されました');
     }
 
     /**

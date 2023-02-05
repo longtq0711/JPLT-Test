@@ -63,12 +63,14 @@
                         level: $('#level').val(),
                     },
                     success: function (data) {
-                        $.each(data['categories'], function (i, item) {
-                            $('#type').append($('<option>', { 
-                                value: item.type,
-                                text : item.type 
-                            }));
-                        });
+                        if ($('#type').val().length == 0) {
+                            $.each(data['categories'], function (i, item) {
+                                $('#type').append($('<option>', { 
+                                    value: item.type,
+                                    text : item.type 
+                                }));
+                            });
+                        }
                     }
                 });
             });
