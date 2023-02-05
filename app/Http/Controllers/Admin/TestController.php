@@ -78,7 +78,9 @@ class TestController extends Controller
     public function edit($id)
     {   
         $test = Test::withCount('questions')->find($id) ?? abort(404, 'テストが見つかりません');
-        return view('admin.test.edit', compact('test'));
+        $category = Category::find($test->category_id);
+        $categories = Category::where(['name' => $category->name, 'level' => $category->level])->get('type');
+        return view('admin.test.edit', compact('test', 'categories'));
     }
 
     /**

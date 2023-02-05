@@ -39,11 +39,9 @@
                     <label for="level">大問</label>
                     <select name="type" id="type" class="form-control mt-1 mb-2">
                         <option value="">大問を選択してください</option>
-                        <option value="漢字の読み方" @if($test->categories->type=== '漢字の読み方') selected @endif>漢字の読み方</option>
-                        <option value="表記" @if($test->categories->type=== '表記') selected @endif>表記</option>
-                        <option value="文脈規定" @if($test->categories->type=== '文脈規定') selected @endif>文脈規定</option>
-                        <option value="言い換かえ類語" @if($test->categories->type=== '言い換かえ類語') selected @endif>言い換かえ類語</option>
-                        <option value="用法" @if($test->categories->type=== '用法') selected @endif>用法</option>
+                        @foreach($categories as $category)
+                            <option value="{{$category->type}}" @if($category->type=== $test->categories->type) selected @endif>{{$category->type}}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="form-group d-grid gap-2 mt-5" style="position: relative;">
