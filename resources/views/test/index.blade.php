@@ -57,7 +57,7 @@
                 function tick() {
                     var counter = document.getElementById("timer");
                     var seconds_out = 60 - seconds;
-                    const time = (minute_start - minutes > 0 ? (minute_start - minutes).toString() + ":" : "") + (seconds_out < 10 ? "0" : "") + String(seconds_out);
+                    const time = (minute_start - minutes > 0 ? (minute_start - minutes - 1).toString() + ":" : "") + (seconds_out < 10 ? "0" : "") + String(seconds_out);
                     counter.innerHTML = minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);;
                     seconds--;
                     if (seconds >= 0) {
@@ -70,6 +70,7 @@
                             }, 1000);
                         }
                     }
+                    console.log(time);
                     $('#time').val(time);
                 }
                 tick();

@@ -22,6 +22,6 @@ class Question extends Model
         return $this->hasMany('App\Models\UserAnswer');
     }
     public function my_answer(){
-        return $this->hasOne('App\Models\UserAnswer')->where('user_id', auth()->user()->id);
+        return $this->hasOne('App\Models\UserAnswer')->where('user_id', auth()->user()->id)->orderBy('created_at', 'desc');
     }
 }
