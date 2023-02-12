@@ -25,11 +25,14 @@
                 <tbody>
                     @foreach($test->questions as $question )
                     <tr>
-                        <td>質問{{ $loop->index }}</td>
+                        <td>質問{{ $loop->index + 1 }}</td>
                         <td>{{ $question->question }}</td>
-                        <td>
+                        <td class="d-flex">
                             <a href="{{ route('questions.edit',[$test->id,$question->id]) }}" class="btn btn-sm btn-primary"><i class="fa fa-pen"></i></a>
-                            <a href="{{ route('questions.destroy', [$test->id,$question->id]) }}" class="btn btn-sm btn-danger"><i class="fa fa-times"></i></a>
+                            <form class="ml-1" method="POST" action="{{ route('questions.destroy', [$test->id,$question->id]) }}">
+                                @csrf
+                                <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button>
+                            </form>
                         </td>
                     </tr>
                     @endforeach
