@@ -4,6 +4,9 @@ use App\Http\Controllers\Admin\QuestionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\TestController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\Admin\TypeController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\UserController;
 
 
 /*
@@ -36,13 +39,33 @@ Route::group(['middleware' => 'auth'], function(){
 
 Route::group(
     [
-        'middleware' =>  ['auth', 'isAdmin'], 'prefix' => 'admin'
+        'prefix' => 'admin', 'as' => 'admin.'
+    ],
+    function () {
+        Route::get('login', [AdminController::class, 'login']);
+        Route::post('login', [AdminController::class, 'signIn'])->name('login');
+    
+        Route::group(['middleware' => 'admin'], function () {
+            Route::get('users/{id}', [UserController::class,'destroy'])->whereNumber('id')->name('users.destroy');
+            Route::resource('users', UserController::class)->except('destroy');
+            Route::get('logout', [AdminController::class, 'logout'])->name('logout');
+            Route::get('/', [AdminController::class, 'index'])->name('index');
+        });
+    }
+);
+
+Route::group(
+    [
+        'middleware' =>  ['auth', 'isAdmin'], 'prefix' => 'teacher'
     ],
     function () {
         Route::get('tests/{id}', [TestController::class,'destroy'])->whereNumber('id')->name('tests.destroy');
         Route::get('tests/{id}/details', [TestController::class,'show'])->whereNumber('id')->name('tests.details');
         Route::post('test/{test_id}/questions/{id}', [QuestionController::class,'destroy'])->whereNumber('test_id')->name('questions.destroy');
+        Route::get('types/{id}', [TypeController::class,'destroy'])->whereNumber('id')->name('types.destroy');
         Route::resource('tests', TestController::class)->except('destroy');
         Route::resource('test/{test_id}/questions', QuestionController::class)->except('destroy');
+        Route::resource('types', TypeController::class)->except('destroy');
+        Route::get('category_type', [TypeController::class,'get_type'])->name('get_type');
     }
 );

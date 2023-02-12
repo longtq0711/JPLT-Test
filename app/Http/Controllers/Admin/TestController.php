@@ -25,7 +25,7 @@ class TestController extends Controller
         if(request()->get('status')){
             $tests = $tests->where('status',request()->get('status'));
         };
-        $tests = $tests->paginate(5);
+        $tests = $tests->orderBy('id', 'DESC')->paginate(5);
         
         return view('admin.test.list', compact('tests'));
     }
@@ -48,7 +48,7 @@ class TestController extends Controller
      */
     public function store(TestCreateRequest $request)
     {
-        $category = Category::where(['name' => $request->category, 'level' => $request->level])->first();
+        $category = Category::where(['name' => $request->category, 'level' => $request->level, 'type' => $request->type])->first();
         $test = Test::create([
             'title' => $request->title,
             'category_id' => $category->id
@@ -78,7 +78,9 @@ class TestController extends Controller
     public function edit($id)
     {   
         $test = Test::withCount('questions')->find($id) ?? abort(404, 'テストが見つかりません');
-        return view('admin.test.edit', compact('test'));
+        $category = Category::find($test->category_id);
+        $categories = Category::where(['name' => $category->name, 'level' => $category->level])->get('type');
+        return view('admin.test.edit', compact('test', 'categories'));
     }
 
     /**
@@ -88,12 +90,16 @@ class TestController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(TestUpdateRequest $request, $id)
+    public function update(Request $request, $id)
     {
-        $Test = Test::find($id) ?? abort(404, 'Test Bulunamadı');
-        Test::find($id)->update($request->except(['_method','_token']));
+        $test = Test::find($id) ?? abort(404, 'テストが見つかりません');
+        $category = Category::where(['name' => $request->name, 'level' => $request->level, 'type' => $request->type])->first();
+        $test->update([
+            'title' => $request->title,
+            'category_id' => $category->id
+        ]);
 
-        return redirect()->route('Testzes.index')->withSuccess('Test güncelleme işlemi başarıyla gerçekleşti.');
+        return redirect()->route('tests.index')->withSuccess('テストが正常に編集されました');
     }
 
     /**
@@ -106,6 +112,6 @@ class TestController extends Controller
     {
         $Test = Test::find($id) ?? abort(404, 'テストが見つかりません');
         $Test->delete();
-        return redirect()->route('test.index')->withSuccess('テスト削除が正常に完了しました!');
+        return redirect()->route('tests.index')->withSuccess('テスト削除が正常に完了しました!');
     }
 }

@@ -14,27 +14,36 @@
                     <input type="text" name="title" class="form-control mt-1 mb-2" value="{{ $test->title }}">
                 </div>
                 <div class="form-group">
-                    <label for="">テストの説明</label>
-                    <textarea name="description" class="form-control mt-1 mb-2"  id="" rows="4">{{$test->description}}</textarea>
-                </div>
-                <!-- <div class="form-group">
-                    <label for="">テスト状態</label>
-                    <select name="status" class="form-control" id="">
-                        <option @if($test->questions_count<5) disabled @endif @if ($test->status === 'publish') selected @endif value="publish">
-                        有効
-                        </option>
-                        <option @if ($test->status === 'passive') selected @endif value="passive">Pasif</option>
-                        <option @if ($test->status === 'draft') selected @endif value="draft">Taslak</option>
+                    <label for="level">レベル</label>
+                    <select name="level" id="level" class="form-control mt-1 mb-2">
+                        <option value="">レベルを選択してください</option>
+                        <option @if($test->categories->level == 'N1') selected @endif value="N1">N1</option>
+                        <option @if($test->categories->level=== 'N2') selected @endif value="N2">N2</option>
+                        <option @if($test->categories->level == 'N3') selected @endif  value="N3">N3</option>
+                        <option @if($test->categories->level == 'N4') selected @endif  value="N4">N4</option>
+                        <option @if($test->categories->level == 'N5') selected @endif  value="N5">N5</option>
                     </select>
                 </div>
+                
                 <div class="form-group">
-                    <input id="hasFinished" @if($test->finished_at) checked @endif type="checkbox" class="mt-2 mb-2">
-                    <label for="">終了日はありますか?</label>
+                    <label for="category_name">カテゴリ名</label>
+                    <select name="name" id="name" class="form-control mt-1 mb-2">
+                        <option value="">カテゴリを選択してください</option>
+                        <option value="ごい" @if($test->categories->name === 'ごい') selected @endif>ごい</option>
+                        <option value="読解" @if($test->categories->name === '読解') selected @endif>読解</option>
+                        <option value="聴解" @if($test->categories->name === '聴解') selected @endif>聴解</option>
+                    </select>
                 </div>
-                <div id="finishedInput" class="form-group" @if(!$test->finished_at) style="display: none"  @endif>
-                    <label for="">終了日</label>
-                    <input type="datetime-local" name="finished_at" @if($test->finished_at) value="{{ date('Y-m-d\TH:i', strtotime($test->finished_at))  }}" @endif class="form-control mt-1 mb-2" >
-                </div> -->
+
+                <div class="form-group">
+                    <label for="level">大問</label>
+                    <select name="type" id="type" class="form-control mt-1 mb-2">
+                        <option value="">大問を選択してください</option>
+                        @foreach($categories as $category)
+                            <option value="{{$category->type}}" @if($category->type=== $test->categories->type) selected @endif>{{$category->type}}</option>
+                        @endforeach
+                    </select>
+                </div>
                 <div class="form-group d-grid gap-2 mt-5" style="position: relative;">
                     <button class="btn btn-success btn-sm " type="submit">テスト編集</button>
                 </div>

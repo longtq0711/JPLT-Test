@@ -26,7 +26,7 @@
                 <div class="card">
                     <ul class="list-group list-group-flush">
                         <select name="name" id="category">
-                            <option value="ごい・文法">ごい・文法</option>
+                            <option value="ごい">ごい</option>
                             <option value="読解">読解</option>
                             <option value="聴解">聴解</option>
                         </select>
@@ -35,7 +35,6 @@
                 <div class="card mt-10">
                     <ul class="list-group list-group-flush">
                         <select name="type" id="type">
-                            <option value="語形成">語形成</option>
                             <option value="漢字の読み方">漢字の読み方</option>
                             <option value="表記">表記</option>
                             <option value="文脈規定">文脈規定</option>

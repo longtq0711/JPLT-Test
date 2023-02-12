@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
             'name' => 'Tran Quang Nam',
             'email' => 'nam.tq@gmail.com',
             'email_verified_at' => now(),
-            'type' => 'admin',
+            'type' => 'teacher',
             'password' => bcrypt('password'),
             'remember_token' => Str::random(10),
         ]);

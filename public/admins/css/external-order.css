@@ -1,0 +1,48 @@
+.external-order-form .scroll-menu {
+    position: relative;
+    overflow-x: auto;
+    height: auto;
+    max-height: 400px;
+    margin-top: 40px;
+}
+
+.external-order-form .dropdown-item {
+    border: grey;
+    background: #FFFFFF;
+    width: 100%;
+    display: flex;
+}
+
+.external-order-form .dropdown-item .dropdown-left {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.external-order-form .dropdown-item .dropdown-right .span {
+    width: 100px;
+}
+
+.external-order-form .img-dropdwon {
+    width: 50px;
+    height: 50px;
+
+}
+
+.external-order-form .message-add-user {
+    padding: 10px 10px 10px 10px;
+    border-radius: 2px;
+    margin-left: 100px;
+}
+
+.external-order-form .max-width-table {
+    max-width: 150px;
+}
+
+.external-order-form .width_facebook_link {
+    max-width: 100%;
+}
+
+.external-order-form .d-arrow {
+    position: absolute;
+    right: 12px;
+}
