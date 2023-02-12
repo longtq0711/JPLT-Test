@@ -41,10 +41,10 @@
                 <div class="form-group">
                     <label for="">正解</label>
                     <select name="correct_answer" id="" class="form-control mb-2 mt-2">
-                        <option @if($question->correct_answer)=== 'answer1') selected @endif value="answer1">回答1. A</option>
-                        <option @if($question->correct_answer)=== 'answer2') selected @endif value="answer2">回答2. B</option>
-                        <option @if($question->correct_answer)=== 'answer3') selected @endif value="answer3">回答3. C</option>
-                        <option @if($question->correct_answer)=== 'answer4') selected @endif value="answer4">回答4. D</option>
+                        <option @if($question->correct_answer === 'answer1') selected @endif value="answer1">回答1. A</option>
+                        <option @if($question->correct_answer === 'answer2') selected @endif value="answer2">回答2. B</option>
+                        <option @if($question->correct_answer === 'answer3') selected @endif value="answer3">回答3. C</option>
+                        <option @if($question->correct_answer === 'answer4') selected @endif value="answer4">回答4. D</option>
                     </select>
                 </div>
                 <div class="form-group mt-3">
